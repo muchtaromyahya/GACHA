@@ -5,15 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-	<script src ="js/javascript.js"></script>
+<script src="Tubes.js"></script>
 <body style="background:#696969">
 	<!-- Navigation -->
 	<nav >
-			<button id="mySidenav"></button>
+			<!--<button border-radius: none; id="mySidenav" onclick="openNav()"></button>-->
+			<span style="font-size:30px;cursor:pointer" id="mySidenav" onclick="openNav()">&#9776;</span>
 			<p></p><img src="logo.png" class="logo" width="250%"></img></p>
 			<ul id="lr">
+					<input type="text" class="search" name="search"  width="50%" placeholder="search">
+					<!--<button border-radius: none; id="search" onclick=" "  ></button>-->
 					<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
-					<button type="button"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+					<button type="button"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >Register</button>
 			</ul>
 		</nav>
 	<!--Login-->
@@ -80,6 +83,15 @@
 				</form>
 			</div>
 		<!--Sidebar-->
-		
+		<div id="mysidenav" class="sidenav">
+				<div id="mySidenav" class="sidenav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<a href="#">Profile</a>
+						<a href="#">Cek Lowongan</a>
+						<a href="#">Daftar Mitra</a>
+						<a href="#">Setting</a>
+						<a href="#">About</a>
+				</div>
+		</div>
 </body>
 </html>
