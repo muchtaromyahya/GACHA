@@ -1,4 +1,16 @@
 body {font-family: Arial, Helvetica, sans-serif;}
+
+nav ul{
+  display: inline-block;
+  margin-left: 80%;
+  position: fixed; 
+}
+nav p{
+  display: inline-block;
+}
+.id{
+  text-align: right;
+}
 button{
   background-color: #4CAF50;
   color: white;
@@ -54,6 +66,7 @@ input[type=text-field],  [type=date]{
 .span.psw {
   float: right;
   padding-top: 16px;
+  margin-left: 80%;
 }
 .modal {
   display: none; /* Hidden by default */
