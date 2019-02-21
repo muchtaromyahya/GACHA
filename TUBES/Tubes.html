@@ -11,9 +11,9 @@
 	<nav >
 			<!--<button border-radius: none; id="mySidenav" onclick="openNav()"></button>-->
 			<span style="font-size:30px;cursor:pointer" id="mySidenav" onclick="openNav()">&#9776;</span>
-			<p></p><img src="logo.png" class="logo" width="250%"></img></p>
-			<ul id="lr">
-					<input type="text" class="search" name="search"  width="50%" placeholder="search">
+			<p><img src="logo.png" class="logo" width="250%"></img></p>
+			<ul>
+					<input type="text" class="search" name="search"  width="50%" placeholder="Search">
 					<!--<button border-radius: none; id="search" onclick=" "  ></button>-->
 					<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>
 					<button type="button"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >Register</button>
@@ -34,7 +34,7 @@
 					<div><input type="text" name="uname" placeholder="Enter Username" required></div>
 					<div><label for="psw"><b>Password</label></div>
 					<div><input type="password" name="psw" placeholder="Enter Password" required></div>
-					<div><button type="submit" >Login</button></div>
+					<div><button class="login" type="submit" >Login</button></div>
 					<label>
 						<input type="checkbox" checked="checked" name="remember">Remember me
 					</label>
@@ -71,7 +71,7 @@
 						<div><input type="password" name="psw" placeholder="Enter Password" required></div>
 						<div><label for="psw" id="psw2"><b>Konfirmasi Password</label></div>
 						<div><input type="password" name="psw" placeholder="Enter Password" required="validasipass()"></div>
-						<div><button type="submit" >Regist</button></div>
+						<div><button class="login" type="submit" >Regist</button></div>
 						<label>
 							<input type="checkbox" checked="checked" name="remember">Remember me
 						</label>
