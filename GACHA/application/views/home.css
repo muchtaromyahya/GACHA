@@ -2,5 +2,10 @@ nav {
     background-color: darkslategrey;
 }
 body{
-    background-color: aqua;
+    body{
+        background-image: url('assets/background.png');
+        position: relative;
+        background-size: cover;
+        
+      }
 }
