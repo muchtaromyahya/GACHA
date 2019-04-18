@@ -1,10 +1,5 @@
-body {font-family: Arial, Helvetica, sans-serif;}
 
-nav{
-  position: fixed;
-  display: flex;
-  float: right;
-}
+
 nav ul{
   display: inline-block;
   margin-left: 70%;
@@ -13,20 +8,7 @@ nav ul{
 nav p{
   display: inline-block;
 }
-button{
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin-right: 1%;
-  margin-top: 0%;
-  border: none;
-  cursor: pointer;
-  width: 60%;	
-  border-radius: 22px;
-}
-button:hover {
-	opacity: 0.8;
-}
+
 
 input[type=text], input[type=password], [type=email] {
   width: 100%;

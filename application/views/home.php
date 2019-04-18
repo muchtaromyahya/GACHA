@@ -13,7 +13,7 @@
 
 <style>
      body{
-      background-image: url('assets/background2.png');
+      background-image: url('assets/background2.jpg');
       position: relative;
       background-size: cover;
       
@@ -35,7 +35,7 @@
       font-size: 20px;
       margin-top: 3%;
     }
-    button{
+    #cekLowongan{
       margin-top: 10%;  
       text-align: center;
       justify-content: center;
@@ -52,10 +52,14 @@
 </style>
 </head>
 <body>
+    
     <div class="container">
+        
         <h1>Bingung Mencari Tempat magang yang cocok?</h1>
         <h2>Kami menyediakan informasi mengenai lowongan magang bagi mahasiswa dan bekerjasama dengan perusahaan perusahaan besar sehingga memudahkan anda dalam memilih dan menentukan</h2>
-         <button>Cek Lowongan</button> <!--langsung redirect ke halaman lowongan -->
+        <form method="get" action="<?php echo base_url('Lowongan'); ?>">
+            <button type="submit" id="cekLowongan">Cek Lowongan</button>
+        </form>
     </div>
     <!-- <header class="">
         <div class="container">
