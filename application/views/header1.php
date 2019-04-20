@@ -32,6 +32,105 @@ body{
      margin-right: 10px;
      padding-top: 5px;
  }
+
+ #navbar{
+      background-color: ;
+      margin: 0%;
+    }
+    .login {
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 80px;
+      border-radius: 10px;
+      position: center;
+    }
+
+    .login:hover {
+      opacity: 0.5;
+    }
+    .h1{
+      font-size: 90px;
+      color: cornsilk;
+    }
+    .nav-link .color{
+        color: antiquewhite;
+    }
+      .badge {
+	margin-left: 3px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 35%; /* Could be more or less, depending on screen size */
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+     margin-left: 80%;
+
+  }
+  .login {
+     width: 100%;
+  }
+}
+input[type=text], input[type=password], [type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=text-field],  [type=date]{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: Arial;
+}
 </style>
 
 </head>
@@ -83,7 +182,7 @@ body{
                     </div>
                 </li>
                 <li class = "nav-item dropdown" >
-                    <button class="nav-link  login" data-toggle = "dropdown" data-target="dropdown_target1" style = "background:red;color:white;border:none;cursor:pointer;width: 75px;height:50px;border-radius:20px;padding-bottom:10px;">
+                    <button class="nav-link  login" onclick="document.getElementById('id01').style.display='block'" data-toggle = "dropdown" data-target="dropdown_target1" style = "background:red;color:white;border:none;cursor:pointer;width: 75px;height:50px;border-radius:20px;padding-bottom:10px;">
                         Login
                     </button>
                     <div class = "dropdown-menu" arialabelledby = "dropdown_target1">
@@ -96,5 +195,27 @@ body{
     </nav>
     <!-- <img src ="assets/placeholder_bg.png"> 
     <img src ="assets/placeholder_bg.png"> -->
+
+    <div id="id01" class="modal" style="padding-left:30%;padding-right:30%;">
+			<form class="modal-content animate" action="/action_page.php" style="padding-top:5%;padding-bottom:5%;">
+				<div class="imgcontainer" style="text-align: center;">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
+					</span>
+					<img src="assets/img_avatar2.png" alt="Avatar" class="avatar" style="width:40%;border-radius:50%;margin-bottom:5%">
+					<div></div>
+				</div>
+				<div class="container">
+					<div><label for="uname" ><b>Username</label></div>
+					<div><input type="text" name="uname" placeholder="Enter Username" required></div>
+					<div><label for="psw"><b>Password</label></div>
+					<div><input type="password" name="psw" placeholder="Enter Password" required></div>
+					<div style="text-align:center;margin-top:5%"><button class="login" type="submit" style="padding:5px;">Login</button></div>
+				</div>
+				<div class="container" style="background-color: #f1f1f1;padding:5%;margin-top:5%">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="login">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+				</div>	
+			</form>
+		</div>
 </body>
 </html>
