@@ -209,7 +209,7 @@ input[type=text-field],  [type=date]{
 					<div><input type="text" name="uname" placeholder="Enter Username" required></div>
 					<div><label for="psw"><b>Password</label></div>
 					<div><input type="password" name="psw" placeholder="Enter Password" required></div>
-					<div style="text-align:center;margin-top:5%"><button class="login" type="submit" style="padding:5px;">Login</button></div>
+					<div style="text-align:center;margin-top:5%"><button class="login " type="submit" style="padding:5px;">Login</button></div>
 				</div>
 				<div class="container" style="background-color: #f1f1f1;padding:5%;margin-top:5%">
 					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="login">Cancel</button>
