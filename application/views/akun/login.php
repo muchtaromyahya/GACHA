@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="application/views/akun/login.css">
+		
     </head>
     <body>
             <!--<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>-->

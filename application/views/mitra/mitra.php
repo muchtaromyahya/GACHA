@@ -11,10 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
  <style>
-    .container{
-        padding-top: 180px;
-        
-    }
+
     .col-sm  img{
          padding-right: 2px;
          padding-top: 35px;
@@ -32,7 +29,8 @@
  </style>
 </head>
 <body>
-        <div class="container">
+     <br><br><br><br>
+        <div class="container cc">
                 <div class = "row justify-content-md-center">
                     <h3 style = "align-items: center;align-content: center;justify-content: center;display:flex;opacity: 0.8;text-align: center">
                         Temukan Perusahaan yang menjadi Mitra dengan GACHA Job Sekeer
@@ -40,82 +38,82 @@
                 </div>
                   <div class="row justify-content-md-center">
                     <div class="col-sm text-center text-md-left p-2">
-                      <img src = "img/row1/smartfren.png" style="cursor:pointer;" href='#'>
+                      <img src = "<?php echo base_url('application/views/mitra/img/row1/smartfren.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
                     <div class="col-sm text-center text-md-left p-2">
-                            <img src = "img/row1/gojek.png" style="cursor:pointer;" href='#'>
+                            <img src = "<?php echo base_url('application/views/mitra/img/row1/gojek.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
                     <div class="col-sm text-center text-md-left p-2">
-                            <img src = "img/row1/btpn.png" style="cursor:pointer;" href='#'>
+                            <img src = "<?php echo base_url('application/views/mitra/img/row1/btpn.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
                     <div class="col-sm text-center text-md-left p-2">
-                            <img src = "img/row1/ciputra.png" style="cursor:pointer;" href='#'>
+                            <img src = "<?php echo base_url('application/views/mitra/img/row1/ciputra.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
                     <div class="col-sm text-center text-md-left p-2">
-                            <img src = "img/row1/shopee.png" style="cursor:pointer;" href='#'>
+                            <img src = "<?php echo base_url('application/views/mitra/img/row1/shopee.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
                     <div class="col-sm text-center text-md-left p-2">
-                            <img src = "img/row1/permata.png" style="cursor:pointer;" href='#'>
+                            <img src = "<?php echo base_url('application/views/mitra/img/row1/permata.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
                   </div>
                   <div class="row justify-content-md-center">
                         <div class="col-sm text-center text-md-left p-2">
-                          <img src = "img/row2/blanja.png" style="cursor:pointer;" href='#'>
+                          <img src = "<?php echo base_url('application/views/mitra/img/row2/blanja.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
                         <div class="col-sm text-center text-md-left p-2">
-                                <img src = "img/row2/moka.png" style="cursor:pointer;" href='#'>
+                                <img src = "<?php echo base_url('application/views/mitra/img/row2/moka.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
                         <div class="col-sm text-center text-md-left p-2">
-                                <img src = "img/row2/bca.png" style="cursor:pointer;" href='#'>
+                                <img src = "<?php echo base_url('application/views/mitra/img/row2/bca.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
                         <div class="col-sm text-center text-md-left p-2">
-                                <img src = "img/row2/undp.png" style="cursor:pointer;" href='#'>
+                                <img src = "<?php echo base_url('application/views/mitra/img/row2/undp.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
                         <div class="col-sm text-center text-md-left p-2">
-                                <img src = "img/row2/lazada.png" style="cursor:pointer;" href='#'>
+                                <img src = "<?php echo base_url('application/views/mitra/img/row2/lazada.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
                         <div class="col-sm text-center text-md-left p-2">
-                                <img src = "img/row2/carrefour.png" style="cursor:pointer;" href='#'>
+                                <img src = "<?php echo base_url('application/views/mitra/img/row2/carrefour.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
                     </div>
                     <div class="row justify-content-md-center">
                             <div class="col-sm text-center text-md-left p-2">
-                              <img src = "img/row3/indosat.png" style="cursor:pointer;" href='#'>
+                              <img src = "<?php echo base_url('application/views/mitra/img/row3/indosat.png'); ?>" style="cursor:pointer;" href='#'>
                             </div>
                             <div class="col-sm text-center text-md-left p-2">
-                                    <img src = "img/row3/mandiri.png" style="cursor:pointer;" href='#'>
+                                    <img src = "<?php echo base_url('application/views/mitra/img/row3/mandiri.png'); ?>" style="cursor:pointer;" href='#'>
                             </div>
                             <div class="col-sm text-center text-md-left p-2">
-                                    <img src = "img/row3/homecredit.png" style="cursor:pointer;" href='#'>
+                                    <img src = "<?php echo base_url('application/views/mitra/img/row3/homecredit.png'); ?>" style="cursor:pointer;" href='#'>
                             </div>
                             <div class="col-sm text-center text-md-left p-2">
-                                    <img src = "img/row3/pwc.png" style="cursor:pointer;" href='#'>
+                                    <img src = "<?php echo base_url('application/views/mitra/img/row3/pwc.png'); ?>" style="cursor:pointer;" href='#'>
                             </div>
                             <div class="col-sm text-center text-md-left p-2">
-                                    <img src = "img/row3/bni.png" style="cursor:pointer;" href='#'>
+                                    <img src = "<?php echo base_url('application/views/mitra/img/row3/bni.png'); ?>" style="cursor:pointer;" href='#'>
                             </div>
                             <div class="col-sm text-center text-md-left p-2">
-                                    <img src = "img/row3/ovo.png" style="cursor:pointer;" href='#'>
+                                    <img src = "<?php echo base_url('application/views/mitra/img/row3/ovo.png'); ?>" style="cursor:pointer;" href='#'>
                             </div>
                         </div>
                         <div class="row justify-content-md-center">
                                 <div class="col-sm text-center text-md-left p-2">
-                                  <img src = "img/row4/ikea.png" style="cursor:pointer;" href='#'>
+                                  <img src = "<?php echo base_url('application/views/mitra/img/row4/ikea.png'); ?>" style="cursor:pointer;" href='#'>
                                 </div>
                                 <div class="col-sm text-center text-md-left p-2">
-                                        <img src = "img/row4/kompas.png" style="cursor:pointer;" href='#'>
+                                        <img src = "<?php echo base_url('application/views/mitra/img/row4/kompas.png'); ?>" style="cursor:pointer;" href='#'>
                                 </div>
                                 <div class="col-sm text-center text-md-left p-2">
-                                        <img src = "img/row4/tokopedia.png" style="cursor:pointer;" href='#'>
+                                        <img src = "<?php echo base_url('application/views/mitra/img/row4/tokopedia.png'); ?>" style="cursor:pointer;" href='#'>
                                 </div>
                                 <div class="col-sm text-center text-md-left p-2">
-                                        <img src = "img/row4/verint.png" style="cursor:pointer;" href='#'>
+                                        <img src = "<?php echo base_url('application/views/mitra/img/row4/verint.png'); ?>" style="cursor:pointer;" href='#'>
                                 </div>
                                 <div class="col-sm text-center text-md-left p-2">
-                                        <img src = "img/row4/idnmedia.png" style="cursor:pointer;" href='#'>
+                                        <img src = "<?php echo base_url('application/views/mitra/img/row4/idnmedia.png'); ?>" style="cursor:pointer;" href='#'>
                                 </div>
                                 <div class="col-sm text-center text-md-left p-2">
-                                        <img src = "img/row4/cinema.png" style="cursor:pointer;" href='#'>
+                                        <img src = "<?php echo base_url('application/views/mitra/img/row4/cinema.png'); ?>" style="cursor:pointer;" href='#'>
                                 </div>
                             </div>
                                 

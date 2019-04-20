@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="home.css">
     <title>GACHA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,7 +12,7 @@
 
 <style>
      body{
-      background-image: url('assets/background2.png');
+      background-image: url('assets/background2.jpg');
       position: relative;
       background-size: cover;
       
@@ -35,8 +34,7 @@
       font-size: 20px;
       margin-top: 3%;
     }
-    button{
-      margin-top: 10%;  
+    #cekLowongan{
       text-align: center;
       justify-content: center;
       margin-left: 41%;
@@ -52,10 +50,14 @@
 </style>
 </head>
 <body>
+    
     <div class="container">
+        
         <h1>Bingung Mencari Tempat magang yang cocok?</h1>
         <h2>Kami menyediakan informasi mengenai lowongan magang bagi mahasiswa dan bekerjasama dengan perusahaan perusahaan besar sehingga memudahkan anda dalam memilih dan menentukan</h2>
-         <button>Cek Lowongan</button> <!--langsung redirect ke halaman lowongan -->
+        <form method="get" action="<?php echo base_url('Lowongan'); ?>">
+            <button type="submit" id="cekLowongan">Cek Lowongan</button>
+        </form>
     </div>
     <!-- <header class="">
         <div class="container">
