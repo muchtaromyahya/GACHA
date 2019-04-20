@@ -89,6 +89,9 @@ body{
   cursor: pointer;
   border-radius: 10px;
 }
+p{
+  font-size: 40px;
+}
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
@@ -202,7 +205,7 @@ input[type=text-field],  [type=date]{
 					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
 					</span>
 					<img src="assets/img_avatar2.png" alt="Avatar" class="avatar" style="width:40%;border-radius:50%;margin-bottom:5%">
-					<div></div>
+					<div><p>Login</p></div>
 				</div>
 				<div class="container">
 					<div><label for="uname" ><b>Username</label></div>
@@ -214,6 +217,9 @@ input[type=text-field],  [type=date]{
 				<div class="container" style="background-color: #f1f1f1;padding:5%;margin-top:5%">
 					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="login">Cancel</button>
 					<span class="psw">Forgot <a href="#">password?</a></span>
+          <div><br>
+          <span class="psw">Belum punya akun?. daftar <a href="#">Disini?</a></span>
+          </div>
 				</div>	
 			</form>
 		</div>
