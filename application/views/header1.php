@@ -217,6 +217,7 @@ input[type=text-field],  [type=date]{
 				<div class="container" style="background-color: #f1f1f1;padding:5%;margin-top:5%">
 					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="login">Cancel</button>
 					<span class="psw">Forgot <a href="#">password?</a></span>
+          
           <div><br>
           <span class="psw">Belum punya akun?. daftar <a href="#">Disini?</a></span>
           </div>
