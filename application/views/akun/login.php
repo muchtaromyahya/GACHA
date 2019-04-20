@@ -4,7 +4,7 @@
 		
     </head>
     <body>
-            <!--<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>-->
+            <!-<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>-->
         <div id="id01" class="modal">
 			<form class="modal-content animate" action="/action_page.php">
 				<div class="imgcontainer">
