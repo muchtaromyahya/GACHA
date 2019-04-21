@@ -53,7 +53,14 @@ class LowonganModel extends CI_Model {
                   <td>$row->ipk</td>
                   <td>$row->umum</td>
                   <td>$row->khusus</td>
-                  <td><button class='bg-danger login'>Hapus</button><button class='bg-success login'>Edit</button></td>
+                  <td>
+                  <form action='".base_url("Lowongan/hapuslowongan/$row->id")."' method='post'>
+                  <button class='bg-danger login' type='submit'>Hapus</button>
+                  </form>
+                  <form action='' method='post'>
+                  <button class='bg-success login'type='submit'>Edit</button>
+                  </form>
+                  </td>
              </tr>
              ";
              $no=$no+1;
