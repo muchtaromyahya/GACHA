@@ -17,18 +17,18 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header text-center">
-                       <h1>Input Lowongan Magang <!--panggil nama perusahaan--></h1>
+                       <h1>Input Lowongan Magang Perusahaan <?= $_SESSION['nama'] ?><!--panggil nama perusahaan--></h1>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="<?php echo base_url('Mitra/Tambah') ?>" method="post">
                                 <div class="form-group">
                                         <label for="text">perusahaan</label>
-                                        <input type="text" class="form-control" id="perusahaan" name="perusahaan" readonly> <!--menampilkan nama perusahaan-->
+                                        <input type="text" class="form-control" id="perusahaan" name="perusahaan" readonly value="<?= $_SESSION['nama'] ?>"> <!--menampilkan nama perusahaan-->
                                         <small class="form-text text-danger"><?= form_error('perusahaan') ?>.</small>
                                     </div>
                             <div class="form-group">
                                 <label for="Semester">Kategori</label>
-                                 <select class="form-control" id="kategori" name="katehori" required>
+                                 <select class="form-control" id="kategori" name="kategori" required>
                                         <option value="none">kategori</option>
                                     <option value="Administrasi&Koordinasi">Administrasi & Koordinasi</option>
                                     <option value="MediaKreatif">Media Kreatif</option>
@@ -42,17 +42,17 @@
                         </div>
                             <div class="form-group">
                                 <label for="jurusan">Jurusan</label><br>
-                                <input type="checkbox" name="jurusan1" value="S1informatika">S1 informatika<br><br>
-                                <input type="checkbox" name="jurusan2" value="S1tekniktelekomunikasi">S1 teknik telekomunikasi<br><br>
-                                <input type="checkbox" name="jurusan3" value="S1teknikindustri" checked>S1 teknik Industri<br><br>
-                                <input type="checkbox" name="jurusan4" value="S1ilmukomunikasi" checked>S1 ilmu komunikasi<br><br>
-                                <input type="checkbox" name="jurusan5" value="S1Akuntansi" checked>S1 Akuntansi<br><br>
-                                <input type="checkbox" name="jurusan3" value="S1MBTI" checked>S1 MBTI<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1informatika">S1 informatika<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1tekniktelekomunikasi">S1 teknik telekomunikasi<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1teknikindustri" checked>S1 teknik Industri<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1ilmukomunikasi" checked>S1 ilmu komunikasi<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1Akuntansi" checked>S1 Akuntansi<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1MBTI" checked>S1 MBTI<br><br>
                                 <small class="form-text text-danger"><?= form_error('jurusan') ?>.</small>
                             </div>
                             <div class="form-group">
                                 <label for="text">durasi</label>
-                                <input type="text" class="form-control" id="durasi" name="durasi" required>>
+                                <input type="text" class="form-control" id="durasi" name="durasi" required>
                                 <small class="form-text text-danger"><?= form_error('durasi') ?>.</small>
                             </div>
                             <div class="form-group">
@@ -74,12 +74,12 @@
                             </div><br>
                             <div class="form-group">
                                     <label for="sks">Jumlah minimal SKS yang sudah di ambil</label>
-                                    <input type="text" class="form-control" id="sks" name="sks" required>>
+                                    <input type="text" class="form-control" id="sks" name="sks" required>
                                     <small class="form-text text-danger"><?= form_error('sks') ?>.</small>
                             </div>
                             <div class="form-group">
                                     <label for="ipk"> Minimal IPK Terakhir</label>
-                                    <input type="text" class="form-control" id="ipk" name="ipk" required>>
+                                    <input type="text" class="form-control" id="ipk" name="ipk" required>
                                     <small class="form-text text-danger"><?= form_error('ipk') ?>.</small>
                             </div>
                             <div class="form-group">
@@ -93,7 +93,7 @@
                             <div class="alert alert-primary" role="alert">
                                     <a href="#" class="alert-link"></a> Dengan mengisi data diatas berarti anda menyetujui semua syarat dan ketentuan yang berlaku.
                             </div>
-                            <button type="submit" name="tambah" class="btn btn-primary float-right">Daftar</button>
+                            <button type="submit" name="tambah" class="btn btn-primary float-right">Post Lowongan</button>
                             <!-- setelah klik tambah redirect ke halaman home atau header1 -->
                         </form>
                     </div>
