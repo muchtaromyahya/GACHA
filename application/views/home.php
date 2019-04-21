@@ -12,7 +12,7 @@
 
 <style>
      body{
-      background-image: url('assets/background2.jpg');
+
       position: relative;
       background-size: cover;
       
@@ -49,7 +49,7 @@
 
 </style>
 </head>
-<body>
+<body style="background-image: url('<?php echo base_url('assets/background2.jpg') ?>');">
     
     <div class="container">
         

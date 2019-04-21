@@ -1,39 +1,17 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="application/views/akun/login.css">
-		
-    </head>
-    <body>
-            <!-<button type="button"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</button>-->
-        <div id="id01" class="modal">
-			<form class="modal-content animate" action="/action_page.php">
-				<div class="imgcontainer">
-					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
-					</span>
-					<img src="assets/img_avatar2.png" alt="Avatar" class="avatar">
-					<div></div>
-					<div><label class="login">Login</label></div> 	
-				</div>
-				<div class="container">
-					<div><label for="uname" ><b>Username</label></div>
-					<div><input type="text" name="uname" placeholder="Enter Username" required></div>
-					<div><label for="psw"><b>Password</label></div>
-					<div><input type="password" name="psw" placeholder="Enter Password" required></div>
-					<div><button class="login" type="submit" >Login</button></div>
-				</div>
-				<div class="container" style="background-color: #f1f1f1">
-					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-					<span class="psw">Forgot <a href="#">password?</a></span>
-				</div>	
-			</form>
-		</div>
-    </body>
-    <script>
-        window.onclick = function(event){
-	        var modal1 = document.getElementById('id01');
-	        if (event.target == modal1) {
-		        modal1.style.display = "none";
-	        }		
-}
-    </script>
-</html>
+<li class = "nav-item dropdown">
+                    <a class = "nav-link dropdown-toggle"  role="button" data-toggle = "dropdown" aria-haspopup="true" data-target="dropdown_target" href = "#" style = "padding-top:8px;">
+					<?= $_SESSION['username'] ?>
+                        <span class = "caret"></span>
+                    </a>
+                    <div class = "dropdown-menu" aria-labelledby="dropdown_target">
+                                <a class = "dropdown-item" style="text-align:center"><img src = "<?php echo base_url('assets/img_avatar2.png') ?>" style = "width: 40px;"></a>
+                                <div class='dropdown-divider'></div>
+                                        <button class = "dropdown-item"><?= $_SESSION['username'] ?></button>
+                                        <button class = "dropdown-item" >Email</button>
+										<button class = "dropdown-item" style = "background-color:bg-danger">Setting</button>
+										<form action="<?php echo base_url('UserController/signout'); ?>">
+										<button class = "dropdown-item">Log Out</button>
+										
+										</form>
+                    </div>
+                </li>
