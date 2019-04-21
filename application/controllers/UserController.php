@@ -22,6 +22,7 @@ class UserController extends CI_Controller {
                 'Logged_in' => true
             );
             $this->session->set_userdata($dataSession);
+            $this->session->set_flashdata('success','Login Berhasil!');
             redirect('Home');
         } else {
             $this->session->set_flashdata('alert','Login Gagal!');
@@ -29,12 +30,13 @@ class UserController extends CI_Controller {
         }
     }
     public function signout(){
-        session_destroy();
+        session_destroy();        
         redirect('Home');
+        
     }
     public function register(){
         $this->User->tambah();
-        $this->session->set_flashdata('alert','registrasi berhasil');
+        $this->session->set_flashdata('success','registrasi berhasil');
         redirect('Home');
         
 

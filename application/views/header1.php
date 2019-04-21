@@ -195,8 +195,8 @@ input[type=text-field],  [type=date]{
                 <div class="container">
                     <div><label for="daftarsebagai"><b>Daftar Sebagai</b></label></div>
                     <div><select class="custom-select" name="status">
-                        <option value="mitra">Mitra</option>
-                        <option value="magang">Pencari Magang</option>
+                        <option value="Mitra">Mitra</option>
+                        <option value="Magang">Pencari Magang</option>
                     </select><div>                 
                     <div><label for="fullname"><b>Nama Lengkap</b></label></div>
                     <div><input type="text" name="fullname" placeholder="Masukan Nama Lengkap" required></div>
@@ -283,5 +283,7 @@ input[type=text-field],  [type=date]{
 <?php 
         if ($this->session->flashdata('alert')){
             $this->load->view('errors/errLogin');
+        } else if ($this->session->flashdata('success')) {
+            $this->load->view('errors/scc');
         }
     ?>
