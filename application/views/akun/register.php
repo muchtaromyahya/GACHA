@@ -1,10 +1,5 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="register.css">
-    </head>
-    <body>
-        <button type="button"  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >Register</button>
-        <div id="id02" class="modal">
+
+        <div id="id02" class="modal" style="padding-left:30%;padding-right:30%;overflow-y:scroll;" >
             <form class="modal-content animate" action="/action_page.php">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;
@@ -37,14 +32,3 @@
                 </div>
             </form>
         </div>
-    </body>
-    <script>
-        function validasipass(){
-	        var psw1 = document.getElementById("psw1");
-	        var psw2 = document.getElementById("psw2");
-	        if (psw1 != psw20){
-		        document.getElementById("psw1").setCustomValidity("Passwords Tidak Sama");
-	        }
-}
-    </script>
-</html>
