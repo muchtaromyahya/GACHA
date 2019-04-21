@@ -1,7 +1,7 @@
 <?php
 class LowonganModel extends CI_Model {
     public function tambah(){
-        $uname=$_SESSION['username'];
+        $uname=$_SESSION['nama'];
         $kategori=$this->input->post('kategori',true);
         $jurusan=$this->input->post('jurusan[]',true);
         $durasi=$this->input->post('durasi',true);
@@ -30,6 +30,37 @@ class LowonganModel extends CI_Model {
         }
 
     }
+    public function getalldata($username){
+        $this->db->where('username',$username);
+        $result=$this->db->get('lowongan');
+        return $result;
+    }
+    public function tampil(){
+        $data=$this->LowonganModel->getalldata($_SESSION['username']);
+        $table="";
+        $no=1;
+        foreach ($data->result() as $row){
+             $table=$table.
+             "<tr>
+                  <td>$no</td>
+                  <td>$row->username</td>
+                  <td>$row->kategori</td>
+                  <td>$row->jurusan</td>
+                  <td>$row->durasi</td>
+                  <td>$row->valid</td>
+                  <td>$row->semester</td>
+                  <td>$row->sks</td>
+                  <td>$row->ipk</td>
+                  <td>$row->umum</td>
+                  <td>$row->khusus</td>
+                  <td><button class='bg-danger login'>Hapus</button><button class='bg-success login'>Edit</button></td>
+             </tr>
+             ";
+             $no=$no+1;
+
+        }
+        return $table;
+   }
 }
 
 ?>
