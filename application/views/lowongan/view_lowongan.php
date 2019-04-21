@@ -16,9 +16,9 @@
 </head>
 <body>
     <br>
-    <div class='container-fluid'>
+    <div class='container' style="width:90%; margin-left:15%">
         <h1 style="text-align:center">DAFTAR LOWONGAN</h1>
-        <table id="example" class="table table-striped table-bordered" >
+        <table id="example" class="table table-striped table-bordered" width="100%" height="50px">
                 <thead>
                     <tr>
                         <th>No</th>
