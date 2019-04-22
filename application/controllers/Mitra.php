@@ -4,7 +4,8 @@ class Mitra extends CI_Controller {
         $this->load->view('header1');
         $this->load->view('mitra/mitra');
     }
-    public function tambahlowongan(){
+    public function tambahlowongan(){ 
+        // digunakan untuk menampilan menambah lowongan untuk mitra
         if($_SESSION['status']=='Mitra') {
             $this->load->view('header1');
             $this->load->view('lowongan/post_lowongan');
@@ -14,11 +15,13 @@ class Mitra extends CI_Controller {
         }
     }
     public function tambah(){
+        // agar ketika di klik tambah akan direct ke home
         $this->LowonganModel->tambah();
         redirect('Home');
 
     }
     public function daftarlowongan(){
+        // digunakan untuk melihat data pendaftar yang sudah mendaftar lowongan
         if($_SESSION['status']=='Mitra') {
             $this->load->view('header1');
             $this->load->view('lowongan/view_lowongan');
@@ -28,6 +31,7 @@ class Mitra extends CI_Controller {
         }
     }
     public function editlowongan(){
+        // digunakan untuk meng update post lowongan yang sudah di update sebelumnya
         if($_SESSION['status']== 'Mitra'){
             $this->load->view('header1');
             $this->load->view('lowongan/edit_lowongan');

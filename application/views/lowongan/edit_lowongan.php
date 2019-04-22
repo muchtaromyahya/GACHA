@@ -22,12 +22,12 @@
                     <div class="card-body">
                         <form action="<?php echo base_url('Mitra/Tambah') ?>" method="post">
                                 <div class="form-group">
-                                        <label for="text">perusahaan</label>
+                                        <label for="text">perusahaan</label> <!--menampilan nama perusahaan-->
                                         <input type="text" class="form-control" id="perusahaan" name="perusahaan" readonly value="<?= $_SESSION['nama'] ?>"> <!--menampilkan nama perusahaan-->
                                         <small class="form-text text-danger"><?= form_error('perusahaan') ?>.</small>
                                     </div>
                             <div class="form-group">
-                                <label for="Semester">Kategori</label>
+                                <label for="Semester">Kategori</label> <!--mengubah kategori lowongan dari database-->
                                  <select class="form-control" id="kategori" name="kategori" required>
                                         <option value="Panggil kategori yg dipilih dari database">*Panggil kategori yg dipilih dari database</option>
                                     <option value="Administrasi&Koordinasi">Administrasi & Koordinasi</option>
@@ -41,7 +41,7 @@
                                 </select>
                         </div>
                             <div class="form-group">
-                                <label for="jurusan">Jurusan</label><br>
+                                <label for="jurusan">Jurusan</label><br> <!--mengubah jurusan dari database-->
                                 <input type="checkbox" name="jurusan[]" value="S1informatika">S1 informatika<br><br>
                                 <input type="checkbox" name="jurusan[]" value="S1tekniktelekomunikasi">S1 teknik telekomunikasi<br><br>
                                 <input type="checkbox" name="jurusan[]" value="S1teknikindustri" checked>S1 teknik Industri<br><br>
@@ -51,18 +51,18 @@
                                 <small class="form-text text-danger"><?= form_error('jurusan') ?>.</small>
                             </div>
                             <div class="form-group">
-                                <label for="text">durasi</label>
+                                <label for="text">durasi</label> <!--mengubah durasi dari database-->
                                 <input type="text" class="form-control" id="durasi" name="durasi" value="*Panggil durasi dari database" required>
                                 <small class="form-text text-danger"><?= form_error('durasi') ?>.</small>
                             </div>
                             <div class="form-group">
-                                <label for="until">Valid until</label>
+                                <label for="until">Valid until</label> <!--mengubah valid until dari database-->
                                 <input type="date" name="until" placeholder="until" value="*panggil until dari database" required>
                                 <small class="form-text text-danger"><?= form_error('until') ?>.</small>
                             </div>
                             
                             <div class="form-group">
-                                    <label for="Semester"> minimal Semester</label>
+                                    <label for="Semester"> minimal Semester</label> <!--mengubah minimal semester dari database-->
                                      <select class="form-control" id="semester" name="semester" required>
                                             <option value="panggil minimal semester dari data base">*panggil nilai minimal semester yang ada di data base</option>
                                         <option value="3">3 </option>
@@ -73,21 +73,21 @@
                                     </select>
                             </div><br>
                             <div class="form-group">
-                                    <label for="sks">Jumlah minimal SKS yang sudah di ambil</label>
+                                    <label for="sks">Jumlah minimal SKS yang sudah di ambil</label> <!--mengubah minimal sks yang sudah diambil dari database-->
                                     <input type="text" class="form-control" id="sks" name="sks" value="*panggil sks dari database" required>
                                     <small class="form-text text-danger"><?= form_error('sks') ?>.</small>
                             </div>
                             <div class="form-group">
-                                    <label for="ipk"> Minimal IPK Terakhir</label>
+                                    <label for="ipk"> Minimal IPK Terakhir</label> <!--mengubah nilai ipk terakhir dari database-->
                                     <input type="text" class="form-control" id="ipk" name="ipk" value="*panggil ipk minimal dari database" required>
                                     <small class="form-text text-danger"><?= form_error('ipk') ?>.</small>
                             </div>
                             <div class="form-group">
-                                    <label for="persyaratan umum">persyaratan Umum</label>
+                                    <label for="persyaratan umum">persyaratan Umum</label> <!--mengubah persyaratan umum dari database-->
                                     <textarea rows="10" cols="60%" class="form-control" id="persyaratanumum" name="persyaratanumum"  required>*panggil persyaratan umum yang ada di database</textarea>
                             </div>
                             <div class="form-group">
-                                <label for="persyaratan khusus">persyaratan khusus</label>
+                                <label for="persyaratan khusus">persyaratan khusus</label> <!--mengubah persyaratan khusus dari database-->
                                 <textarea rows="10" cols="60%" class="form-control" id="persyaratankhusus" name="persyaratankhusus"  >*panggil persyaratan umum yang ada di database</textarea>
                             </div>
                             <div class="alert alert-primary" role="alert">
