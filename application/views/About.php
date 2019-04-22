@@ -99,16 +99,16 @@
         <div class="col-md-1 col-lg-2 text-center justify-content-center mx-auto my-2" style="display:flex;align-items:center;justify-items:center;">
           
             <a>
-              <img src = "<?php echo base_url('application/views/assets/facebook.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href='https://www.facebook.com/'> 
+              <img src = "<?php echo base_url('application/views/assets/facebook.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://facebook.com/'); ?>">
             </a> 
             <a >
-               <img src = "<?php echo base_url('application/views/assets/twitter.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href='https://twitter.com/'> 
+               <img src = "<?php echo base_url('application/views/assets/twitter.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://twitter.com/'); ?>"> 
             </a>  
             <a >
-              <img src = "<?php echo base_url('application/views/assets/whatsapp.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href='https://www.whatsapp.com/'> 
+              <img src = "<?php echo base_url('application/views/assets/whatsapp.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://whatsapp.com/'); ?>"> 
             </a>
             <a>
-               <img src = "<?php echo base_url('application/views/assets/instagram.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href='https://www.instagram.com/'> 
+               <img src = "<?php echo base_url('application/views/assets/instagram.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://instagram.com/'); ?>"> 
             </a>
 
           
