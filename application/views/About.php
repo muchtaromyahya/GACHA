@@ -27,7 +27,7 @@
             text-align:center;
         }
         img{
-            width: 20%;
+            width: 35%;
             text-align: center;
             margin-left: 40%;
         }
@@ -43,6 +43,7 @@
             width: 30%;
             background-color:skyblue;
         }
+        
        
         
 
@@ -55,13 +56,13 @@
                     <h2 > Website GACHA merupakan sebuah website yang menyediakan lowongan magang kepada mahasiswa biasa yang sedang berkuliah maupun masyarakat yang mencari lowongan kerja praktik maupun magang . Jadi dengan adanya website ini, mahasiswa akan mudah mencari perusahaan perusahaan yang menyediakan lowongan magang</h2>
                 </div>
                 <div class = "col-md">
-                        <img src = "<?php echo base_url('application\views\assets\logo_gacha.png'); ?>" style="cursor:pointer;" href='#'>
+                        <img  src = "<?php echo base_url('application\views\assets\about2.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
             </div>
 
             <div class = "row" style = "margin-top: 250px;margin-left: 50px;margin-right: auto;">
                 <div class = "col-md">
-                        <img src = "<?php echo base_url('application\views\assets\logo_gacha.png'); ?>" style="cursor:pointer;" href='#'>
+                        <img  src = "<?php echo base_url('application\views\assets\about1.png'); ?>" style="cursor:pointer;" href='#'>
                 </div>
                 <div class = "col-md">
                     <h2> Dengan menggunakan GACHA, mahasiswa tidak perlu mencari lagi lowongan magang dengan susah payah, GACHA memberikan informasi yang detail serta lengkap dalam hal dunia magang, baik dari segi informasi lowongan yang ada maupun perusahaan yang menjadi mitra GACHA</h2>
@@ -73,7 +74,7 @@
                             <h2> Mitra perusahaan dapat dengan mudah mendapatkan serta menyaring para aplikan magang sesuai dengan kebutuhan dan latar belakang aplikan</h2>
                     </div>
                     <div class = "col-md">
-                            <img src = "<?php echo base_url('application\views\assets\logo_gacha.png'); ?>" style="cursor:pointer;" href='#'>
+                            <img src = "<?php echo base_url('application\views\assets\about3.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
             </div>
 
