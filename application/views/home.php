@@ -56,7 +56,7 @@
         <h1>Bingung Mencari Tempat magang yang cocok?</h1>
         <h2>Kami menyediakan informasi mengenai lowongan magang bagi mahasiswa dan bekerjasama dengan perusahaan perusahaan besar sehingga memudahkan anda dalam memilih dan menentukan</h2>
         <form method="get" action="<?php echo base_url('Lowongan'); ?>">
-            <button type="submit" id="cekLowongan">Cek Lowongan</button>
+            <button typ1e="submit" id="cekLowongan">Cek Lowongan</button>
         </form>
     </div>
     <!-- <header class="">
