@@ -27,6 +27,15 @@ class Mitra extends CI_Controller {
             redirect('Home');
         }
     }
+    public function editlowongan(){
+        if($_SESSION['status']== 'Mitra'){
+            $this->load->view('header1');
+            $this->load->view('lowongan/edit_lowongan');
+        } else{
+            $this->session->set_flashdata('alert','anda tidak mempunyai hak untuk mengakses halaman sebelumnya!');
+            redirect('Home');
+        }
+    }
 
 }
 
