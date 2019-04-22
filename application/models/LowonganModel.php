@@ -36,7 +36,7 @@ class LowonganModel extends CI_Model {
         return $result;
     }
     public function tampil(){
-        $data=$this->LowonganModel->getalldata($_SESSION['username']);
+        $data=$this->LowonganModel->getalldata($_SESSION['nama']);
         $table="";
         $no=1;
         foreach ($data->result() as $row){
@@ -55,9 +55,9 @@ class LowonganModel extends CI_Model {
                   <td>$row->khusus</td>
                   <td>
                   <form action='".base_url("Lowongan/hapuslowongan/$row->id")."' method='post'>
-                  <button class='bg-danger login' type='submit'>Hapus</button>
+                  <button class='bg-danger login'  type='submit'>Hapus</button>
                   </form>
-                  <form action='' method='post'>
+                  <form action='".base_url("Lowongan/editlowongan/$row->id")."' method='post'>
                   <button class='bg-success login'type='submit'>Edit</button>
                   </form>
                   </td>
@@ -68,6 +68,41 @@ class LowonganModel extends CI_Model {
         }
         return $table;
    }
+   public function edit($id) {
+    $this->db->where('id',$id);
+    return $this->db->get('lowongan')->row_array();
+   }
+   public function ubahdb($id) {
+    $uname=$_SESSION['nama'];
+    $kategori=$this->input->post('kategori',true);
+    $jurusan=$this->input->post('jurusan[]',true);
+    $durasi=$this->input->post('durasi',true);
+    $valid=$this->input->post('until',true);
+    $semester=$this->input->post('semester',true);
+    $sks=$this->input->post('sks',true);
+    $ipk=$this->input->post('ipk',true);
+    $umum=$this->input->post('persyaratanumum',true);
+    $khusus=$this->input->post('persyaratankhusus',true);
+    $data= [
+        'username'=>$uname,
+        'kategori'=>$kategori,
+        'jurusan'=>$jurusan[$i],
+        'durasi'=>$durasi,
+        'valid'=>$valid,
+        'semester'=>$semester,
+        'sks'=>$sks,
+        'ipk'=>$ipk,
+        'umum'=>$umum,
+        'khusus'=>$khusus,
+    ];
+    $this->db->where('id',$id);
+    $this->db->update('lowongan',$data);
+    $this->session->set_flashdata('success','Update Berhasil');
+
+
+
+   }
+   
 }
 
 ?>

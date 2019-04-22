@@ -51,4 +51,9 @@ $(document).ready(function() {
     $('#example').DataTable();
 } );
 </script>
+<script>
+    function hapus() {
+        confirm("apakah anda yakin? ");
+    }
+</script>
 </html>
