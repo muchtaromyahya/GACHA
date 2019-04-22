@@ -17,7 +17,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header text-center">
-                       <h1>Edit Lowongan Magang Perusahaan <?= $_SESSION['nama'] ?><!--panggil nama perusahaan--></h1>
+                       <h1>Edit Lowongan Magang Perusahaan <?= $_SESSION['nama'] ?><!--panggil nama perusahaan  --></h1>
                     </div>
                     <div class="card-body">
                         <form action="<?php echo base_url('Mitra/Tambah') ?>" method="post">
