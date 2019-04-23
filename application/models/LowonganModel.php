@@ -125,7 +125,7 @@ class LowonganModel extends CI_Model {
               <td>$row->khusus</td>
               <td>
               <form action='".base_url("Lowongan/applylowongan/$row->id/$row->username")."' method='post'>
-                    <button class='bg-success login'type='submit'>Edit</button>
+                    <button class='bg-primary login'type='submit'>Daftar</button>
               </form>
               </td>
          </tr>

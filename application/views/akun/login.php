@@ -12,9 +12,7 @@
                                         <button class = "dropdown-item"><?= $_SESSION['nama'] ?></button>
                                         <?php if($_SESSION['status']=='Mitra'){
 											$this->load->view('spatial/buttonMitra');
-										}else {
-											$this->load->view('spatial/buttonUser');
-                                        } ?>
+										}?>
                                         <form action="<?php echo base_url('UserController/setting'); ?>" method="post">
                                         <button class = "dropdown-item"  style = "background-color:bg-danger">Setting</button>
                                         </form>
