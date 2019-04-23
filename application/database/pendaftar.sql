@@ -25,40 +25,38 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lowongan`
+-- Table structure for table `pendaftar`
 --
 
-CREATE TABLE `lowongan` (
-  `id` int(100) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `kategori` varchar(100) NOT NULL,
+CREATE TABLE `pendaftar` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `nim` varchar(100) NOT NULL,
+  `perguruantinggi` varchar(100) NOT NULL,
   `jurusan` varchar(100) NOT NULL,
-  `durasi` varchar(100) NOT NULL,
-  `valid` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `semester` int(11) NOT NULL,
   `sks` int(11) NOT NULL,
-  `ipk` double NOT NULL,
-  `umum` varchar(100) NOT NULL,
-  `khusus` varchar(100) NOT NULL
+  `ipk` int(11) NOT NULL,
+  `berkas` varchar(100) NOT NULL,
+  `lowongan` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `lowongan`
+-- Dumping data for table `pendaftar`
 --
 
-INSERT INTO `lowongan` (`id`, `username`, `kategori`, `jurusan`, `durasi`, `valid`, `semester`, `sks`, `ipk`, `umum`, `khusus`) VALUES
-(9, 'Abdi Masyarakat', 'Sumber Daya Manusia', 'S1 Teknik Industri', '6 Bulan', '2020-11-11', 6, 4, 5, '1', '1\r\n'),
-(10, 'Abdi Masyarakat', 'Administrasi & Koordinasi', 'S1 Ilmu Komunikasi', '6 Bulan', '2020-11-11', 3, 4, 5, '1', '1\r\n'),
-(11, 'Abdi Masyarakat', 'Administrasi & Koordinasi', 'S1 Akuntansi', '6 Bulan', '2020-11-11', 3, 4, 5, '1', '1\r\n');
+INSERT INTO `pendaftar` (`id`, `nama`, `nim`, `perguruantinggi`, `jurusan`, `email`, `semester`, `sks`, `ipk`, `berkas`, `lowongan`) VALUES
+(3, 'Gery n', '1301170116', 'Telkom University', 'IF', 'gery.nugroho@gmail.com', 5, 10, 4, 'l.rar', 'Abdi Masyarakat');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `lowongan`
+-- Indexes for table `pendaftar`
 --
-ALTER TABLE `lowongan`
+ALTER TABLE `pendaftar`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -66,10 +64,10 @@ ALTER TABLE `lowongan`
 --
 
 --
--- AUTO_INCREMENT for table `lowongan`
+-- AUTO_INCREMENT for table `pendaftar`
 --
-ALTER TABLE `lowongan`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+ALTER TABLE `pendaftar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
