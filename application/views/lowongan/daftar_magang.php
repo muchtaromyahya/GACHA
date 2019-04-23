@@ -26,8 +26,9 @@ h1{
                                <h1>From Pendaftaran Magang <!--panggil nama perusahaan--></h1>
                             </div>
                             <div class="card-body">
-                                <form action="" method="post">
+                            <?php echo form_open_multipart('upload/do_upload');?>
                                     <div class="form-group">
+                                        <input type="text" class="form-control" id="id" name="id" value="<?= $user ?>" hidden>
                                         <label for="nim">NIM</label>
                                         <input type="text" class="form-control" id="nim" name="nim" required> 
                                         <small class="form-text text-danger"><?= form_error('nim') ?>.</small>
@@ -72,16 +73,16 @@ h1{
                                             <input type="text" class="form-control" id="ipk" name="ipk" required>>
                                             <small class="form-text text-danger"><?= form_error('ipk') ?>.</small>
                                     </div>
-                                    <form>
+                                    
                                             <div class="form-group">
                                               <label for="berkas">Silakan upload berkas yang dibutuhkan</label>
-                                              <input type="file" class="form-control-file" id="berkas">
+                                              <input type="file" size="20" class="form-control-file" name="userfile" id="berkas">
                                             </div>
-                                          </form>
+                                          
                                     <div class="alert alert-primary" role="alert">
                                             <a href="#" class="alert-link"></a> Dengan mengisi data diatas berarti anda menyetujui semua syarat dan ketentuan yang berlaku.
                                     </div>
-                                    <button type="submit" name="tambah" class="btn btn-primary float-right">Daftar</button>
+                                    <button type="submit" name="submit" value="upload" class="btn btn-primary float-right">Daftar</button>
                                     <!-- setelah klik tambah redirect ke halaman lowongan -->
                                 </form>
                             </div>

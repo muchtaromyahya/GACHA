@@ -100,7 +100,110 @@ class LowonganModel extends CI_Model {
 
 
    }
+   public function getdata() {
+        return $this->db->get('lowongan');
+ 
+   }
+   public function tampilsemua(){
+    $data=$this->LowonganModel->getdata();
+    $table="";
+    $no=1;
+    foreach ($data->result() as $row){
+        if (isset($_SESSION['Logged_in']) && $_SESSION['status']=='Magang') {
+         $table=$table.
+         "<tr>
+              <td>$no</td>
+              <td>$row->username</td>
+              <td>$row->kategori</td>
+              <td>$row->jurusan</td>
+              <td>$row->durasi</td>
+              <td>$row->valid</td>
+              <td>$row->semester</td>
+              <td>$row->sks</td>
+              <td>$row->ipk</td>
+              <td>$row->umum</td>
+              <td>$row->khusus</td>
+              <td>
+              <form action='".base_url("Lowongan/applylowongan/$row->id/$row->username")."' method='post'>
+                    <button class='bg-success login'type='submit'>Edit</button>
+              </form>
+              </td>
+         </tr>
+         ";
+         
+        } else if (isset($_SESSION['Logged_in']) && $_SESSION['status']=='Mitra') {
+            $table=$table.
+         "<tr>
+              <td>$no</td>
+              <td>$row->username</td>
+              <td>$row->kategori</td>
+              <td>$row->jurusan</td>
+              <td>$row->durasi</td>
+              <td>$row->valid</td>
+              <td>$row->semester</td>
+              <td>$row->sks</td>
+              <td>$row->ipk</td>
+              <td>$row->umum</td>
+              <td>$row->khusus</td>
+              <td></td>
+         </tr>
+         ";
+        } else {
+            $table=$table.
+         "<tr>
+              <td>$no</td>
+              <td>$row->username</td>
+              <td>$row->kategori</td>
+              <td>$row->jurusan</td>
+              <td>$row->durasi</td>
+              <td>$row->valid</td>
+              <td>$row->semester</td>
+              <td>$row->sks</td>
+              <td>$row->ipk</td>
+              <td>$row->umum</td>
+              <td>$row->khusus</td>
+              <td>Login to Apply</td>
+         </tr>
+         ";
+        }
+        $no=$no+1;
+
+    }
+    return $table;
+    }
+    public function tampilpendaftar(){
+        if (isset($_SESSION['Logged_in']) && $_SESSION['status']=='Mitra'){
+            $name=$_SESSION['nama'];
+            $this->db->where('lowongan',$name);
+            $data=$this->db->get('pendaftar');
+            $table="";
+            $no=1;
+            foreach ($data->result() as $row) {
+                $table=$table.
+         "<tr>
+              <td>$no</td>
+              <td>$row->nama</td>
+              <td>$row->nim</td>
+              <td>$row->perguruantinggi</td>
+              <td>$row->jurusan</td>
+              <td>$row->email</td>
+              <td>$row->semester</td>
+              <td>$row->sks</td>
+              <td>$row->ipk</td>
+              <td style='text-align:center'><a href='".base_url("data/$row->berkas")."'  download>
+              <img src='".base_url("assets/download.ico")."' width='30px' >
+            </a></td>
+         </tr>
+         ";
+                $no=$no+1;
+            }
+
+
+        }
+        return $table;
+    }
    
+    
 }
 
 ?>

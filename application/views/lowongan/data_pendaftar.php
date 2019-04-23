@@ -29,11 +29,12 @@
                         <th>SKS yang telah di ambil</th>
                         <th>IPK terakhir</th>
                         <th>berkas</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- panggil dari data base -->
+                    <?php $table=$this->LowonganModel->tampilpendaftar();
+                            echo $table;
+                    ?>
                 </tbody>
 
             </table>

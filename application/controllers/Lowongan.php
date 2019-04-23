@@ -35,6 +35,13 @@ class Lowongan extends CI_Controller {
           $this->LowonganModel->ubahdb($id);
           redirect('Mitra/daftarLowongan');
       }
+     public function applylowongan($id,$username) {
+          $data['id']=$id;
+          $data['user']=$username;
+          $this->load->view('header1');
+          $this->load->view('lowongan/daftar_magang',$data);
+
+     }
      
 }   
 ?>
