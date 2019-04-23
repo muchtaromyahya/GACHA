@@ -33,6 +33,30 @@ class User extends CI_Model {
         $result=$this->db->get('registration',1);
         return $result;
     }
+     public function getdata($username) {
+         $this->db->where('username',$username);
+         $result=$this->db->get('registration',1);
+        return $result->row_array();
+     }
+     public function edit($username) {
+        $data=$this->User->getdata($this->input->post('username'),true);
+        if (md5($this->input->post('password'))==$data['password']){
+            $newdata= [
+                'nama'=>$this->input->post('perusahaan',true),
+            'password'=>md5($this->input->post('passwordbaru',true)),
+            'email'=>$this->input->post('email',true),
+            'tempat'=>$this->input->post('Tempat',true),
+            'tanggalLahir'=>$this->input->post('tanggal',true),
+            ];
+            $this->db->where('username',$username);
+            $this->db->update('registration',$newdata);
+            $this->session->set_flashdata('success','Update Berhasil');
+        } else {
+            $this->session->set_flashdata('alert','Update gagal');
+        }
+
+        
+     }
 }
 
 ?>

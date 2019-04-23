@@ -1,1 +1,1 @@
-<button class = "dropdown-item" >Daftar Lowongan</button>
+<button class = "dropdown-item" >Daftar Magang</button>
