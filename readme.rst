@@ -53,3 +53,14 @@ Contributors
 Acknowledgement
 ***************
 Website ini dibuat untuk memenuhi tugas besar mata kuliah WEB PROGRAMMING Telkom University
+
+***************
+ERD
+***************
+![erd](https://user-images.githubusercontent.com/35554752/56590114-b3966a80-6610-11e9-9d1a-ce39de2f7b30.jpg)
+
+***************
+USECASE DIAGRAM
+***************
+![1556028213195](https://user-images.githubusercontent.com/35554752/56590009-7b8f2780-6610-11e9-95dd-2426ab0a5d17.jpg)
+
