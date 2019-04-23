@@ -30,6 +30,15 @@ class Mitra extends CI_Controller {
             redirect('Home');
         }
     }
+    public function viewpendaftar(){
+        if($_SESSION['status']== 'Mitra'){
+            $this->load->view('header1');
+            $this->load->view('lowongan/data_pendaftar');
+        } else{
+            $this->session->set_flashdata('alert', 'anda tidak mempunyai hak untuk mengakses halaman sebelumnya!');
+            redirect('Home');
+        }
+    }
 
 
 }
