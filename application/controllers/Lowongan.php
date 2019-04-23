@@ -5,13 +5,15 @@ class Lowongan extends CI_Controller {
             $this->load->view('lowongan/lowongan');
      }
      public function hapuslowongan($id) {
-          if ($SESSION['status']=='Mitra') {
+          if ($_SESSION['status']=='Mitra') {
                $this->db->where('id', $id);
                $this->db->delete('lowongan');
                $this->session->set_flashdata('success','data berhasil di hapus!');
                redirect('Mitra/daftarLowongan');
+          } else {
+               redirect('Home');
           }
-          redirect('Home');
+          
           
      }
      public function editlowongan($id){

@@ -11,7 +11,7 @@ class UserController extends CI_Controller {
             $email=$data['email'];
             $nama=$data['nama'];
             $tempat=$data['tempat'];
-            $tanggal=$data['tanggal'];
+            $tanggal=$data['tanggalLahir'];
             $dataSession = array (
                 'username' => $uname,
                 'status' => $status,

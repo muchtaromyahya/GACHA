@@ -75,7 +75,6 @@ class LowonganModel extends CI_Model {
    public function ubahdb($id) {
     $uname=$_SESSION['nama'];
     $kategori=$this->input->post('kategori',true);
-    $jurusan=$this->input->post('jurusan[]',true);
     $durasi=$this->input->post('durasi',true);
     $valid=$this->input->post('until',true);
     $semester=$this->input->post('semester',true);
@@ -86,7 +85,6 @@ class LowonganModel extends CI_Model {
     $data= [
         'username'=>$uname,
         'kategori'=>$kategori,
-        'jurusan'=>$jurusan[$i],
         'durasi'=>$durasi,
         'valid'=>$valid,
         'semester'=>$semester,

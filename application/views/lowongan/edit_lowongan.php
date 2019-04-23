@@ -29,7 +29,7 @@
                                     <div class="form-group">
                                 <label for="Semester">Kategori</label>
                                  <select class="form-control" id="kategori" name="kategori" required>
-                                        <option value="none">kategori</option>
+                                        <option value="<?= $datum['kategori'] ?>"><?= $datum['kategori'] ?></option>
                                     <option value="Administrasi & Koordinasi">Administrasi & Koordinasi</option>
                                     <option value="Media Kreatif">Media Kreatif</option>
                                     <option value="Akuntansi & Finansial">Akuntansi & Finansial</option>
