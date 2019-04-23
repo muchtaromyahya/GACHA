@@ -26,12 +26,12 @@
                         <th>Kategori</th>
                         <th>Jurusan</th>
                         <th>Durasi</th>
-                        <th>Valid</th>
-                        <th>Semester</th>
-                        <th>SKS</th>
-                        <th>IPK</th>
-                        <th>Umum</th>
-                        <th>Khusus</th>
+                        <th>Valid until</th>
+                        <th>Semester minimal</th>
+                        <th>SKS minimal</th>
+                        <th>IPK minimal</th>
+                        <th>Persyaratan Umum</th>
+                        <th>Persyaratan Khusus</th>
                         <th>Action</th>
                     </tr>
                 </thead>

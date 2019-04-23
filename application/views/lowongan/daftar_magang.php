@@ -35,22 +35,22 @@ h1{
                                     </div>
                                     <div class="form-group">
                                         <label for="nama">Nama Lengkap</label>
-                                        <input type="text" class="form-control" id="nama" name="nama" required>>
+                                        <input type="text" class="form-control" id="nama" name="nama" required>
                                         <small class="form-text text-danger"><?= form_error('nama') ?>.</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="text">Email</label>
-                                        <input type="text" class="form-control" id="email" name="email" required>>
+                                        <input type="text" class="form-control" id="email" name="email" required>
                                         <small class="form-text text-danger"><?= form_error('email') ?>.</small>
                                     </div>
                                     <div class="form-group">
                                         <label for="jurusan">Jurusan</label>
-                                        <input type="text" class="form-control" id="jurusan" name="jurusan" required>>
+                                        <input type="text" class="form-control" id="jurusan" name="jurusan" required>
                                         <small class="form-text text-danger"><?= form_error('jurusan') ?>.</small>
                                     </div>
                                     <div class="form-group">
                                             <label for="jurusan">Perguruan Tinggi</label>
-                                            <input type="text" class="form-control" id="kampus" name="kampus" required>>
+                                            <input type="text" class="form-control" id="kampus" name="kampus" required>
                                             <small class="form-text text-danger"><?= form_error('kampus') ?>.</small>
                                     </div>
                                     <div class="form-group">
@@ -65,12 +65,12 @@ h1{
                                     </div>
                                     <div class="form-group">
                                             <label for="sks">Jumlah SKS yang sudah di ambil</label>
-                                            <input type="text" class="form-control" id="sks" name="sks" required>>
+                                            <input type="text" class="form-control" id="sks" name="sks" required>
                                             <small class="form-text text-danger"><?= form_error('sks') ?>.</small>
                                     </div>
                                     <div class="form-group">
                                             <label for="ipk">IPK Terakhir</label>
-                                            <input type="text" class="form-control" id="ipk" name="ipk" required>>
+                                            <input type="text" class="form-control" id="ipk" name="ipk" required>
                                             <small class="form-text text-danger"><?= form_error('ipk') ?>.</small>
                                     </div>
                                     
