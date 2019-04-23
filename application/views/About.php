@@ -12,12 +12,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
     </head>
     <style>
-        .container{
-            width:80%;
-            margin-left:20%;
-            font-family: Roboto;
-            background-color:skyblue;
-        }
+
         h2{
             font-size: 22px;
             color:royalblue
@@ -26,7 +21,7 @@
             border: 2px;
             text-align:center;
         }
-        img{
+        .ss{
             width: 35%;
             text-align: center;
             margin-left: 40%;
@@ -56,13 +51,13 @@
                     <h2 > Website GACHA merupakan sebuah website yang menyediakan lowongan magang kepada mahasiswa biasa yang sedang berkuliah maupun masyarakat yang mencari lowongan kerja praktik maupun magang . Jadi dengan adanya website ini, mahasiswa akan mudah mencari perusahaan perusahaan yang menyediakan lowongan magang</h2>
                 </div>
                 <div class = "col-md">
-                        <img  src = "<?php echo base_url('application\views\assets\about2.png'); ?>" style="cursor:pointer;" href='#'>
+                        <img class="ss"  src = "<?php echo base_url('application\views\assets\about2.png'); ?>" style="cursor:pointer;" href='#'>
                     </div>
             </div>
 
             <div class = "row" style = "margin-top: 250px;margin-left: 50px;margin-right: auto;">
                 <div class = "col-md">
-                        <img  src = "<?php echo base_url('application\views\assets\about1.png'); ?>" style="cursor:pointer;" href='#'>
+                        <img class="ss"  src = "<?php echo base_url('application\views\assets\about1.png'); ?>" style="cursor:pointer;" href='#'>
                 </div>
                 <div class = "col-md">
                     <h2> Dengan menggunakan GACHA, mahasiswa tidak perlu mencari lagi lowongan magang dengan susah payah, GACHA memberikan informasi yang detail serta lengkap dalam hal dunia magang, baik dari segi informasi lowongan yang ada maupun perusahaan yang menjadi mitra GACHA</h2>
@@ -74,7 +69,7 @@
                             <h2> Mitra perusahaan dapat dengan mudah mendapatkan serta menyaring para aplikan magang sesuai dengan kebutuhan dan latar belakang aplikan</h2>
                     </div>
                     <div class = "col-md">
-                            <img src = "<?php echo base_url('application\views\assets\about3.png'); ?>" style="cursor:pointer;" href='#'>
+                            <img class="ss" src = "<?php echo base_url('application\views\assets\about3.png'); ?>" style="cursor:pointer;" href='#'>
                         </div>
             </div>
 
@@ -99,16 +94,16 @@
         <div class="col-md-1 col-lg-2 text-center justify-content-center mx-auto my-2" style="display:flex;align-items:center;justify-items:center;">
           
             <a>
-              <img src = "<?php echo base_url('application/views/assets/facebook.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://facebook.com/'); ?>">
+              <img class="ss" src = "<?php echo base_url('application/views/assets/facebook.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://facebook.com/'); ?>">
             </a> 
             <a >
-               <img src = "<?php echo base_url('application/views/assets/twitter.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://twitter.com/'); ?>"> 
+               <img class="ss" src = "<?php echo base_url('application/views/assets/twitter.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://twitter.com/'); ?>"> 
             </a>  
             <a >
-              <img src = "<?php echo base_url('application/views/assets/whatsapp.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://whatsapp.com/'); ?>"> 
+              <img class="ss" src = "<?php echo base_url('application/views/assets/whatsapp.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://whatsapp.com/'); ?>"> 
             </a>
             <a>
-               <img src = "<?php echo base_url('application/views/assets/instagram.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://instagram.com/'); ?>"> 
+               <img  class="ss" src = "<?php echo base_url('application/views/assets/instagram.png'); ?>" style="cursor:pointer;width:60px;margin-right:20px;" href="<?php echo base_url('https://instagram.com/'); ?>"> 
             </a>
 
           

@@ -58,10 +58,10 @@
 
         
         <div class="row justify-content-md-center">
-                    <div class="col-sm text-center text-md-center p-2 Low1">
+                    <div class="col-sm text-center text-md-center p-2 Low1" href="test"><a href="test">
                       <img src = "<?php echo base_url('application/views/lowongan/assets/Administration.png'); ?>" style="cursor:pointer;" href='#'>
                         <br>
-                        <h5 style="cursor:pointer;">Administrasi & Koordinasi</h5>
+                        <h5 style="cursor:pointer;">Administrasi & Koordinasi</h5></a>
                     </div>
                     <div class="col-sm text-center text-md-center p-2  Low1">
                             <img src = "<?php echo base_url('application/views/lowongan/assets/Media.png'); ?>" style="cursor:pointer;" href='#'>

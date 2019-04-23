@@ -30,11 +30,11 @@
                                 <label for="Semester">Kategori</label>
                                  <select class="form-control" id="kategori" name="kategori" required>
                                         <option value="none">kategori</option>
-                                    <option value="Administrasi&Koordinasi">Administrasi & Koordinasi</option>
-                                    <option value="MediaKreatif">Media Kreatif</option>
-                                    <option value="Akuntansi&Finansial">Akuntansi & Finansial</option>
-                                    <option value="GeneralService">General Service</option>
-                                    <option value="SumberDayaManusia">Sumber Daya Manusia</option>
+                                    <option value="Administrasi & Koordinasi">Administrasi & Koordinasi</option>
+                                    <option value="Media Kreatif">Media Kreatif</option>
+                                    <option value="Akuntansi & Finansial">Akuntansi & Finansial</option>
+                                    <option value="General Service">General Service</option>
+                                    <option value="Sumber Daya Manusia">Sumber Daya Manusia</option>
                                     <option value="IT&Software">IT & Software</option>
                                     <option value="Manajemen&Konsultan">Manajemen & Konsultan</option>
                                     <option value="Sales&Marketing">Sales & Marketing</option>
@@ -42,12 +42,12 @@
                         </div>
                             <div class="form-group">
                                 <label for="jurusan">Jurusan</label><br>
-                                <input type="checkbox" name="jurusan[]" value="S1informatika">S1 informatika<br><br>
-                                <input type="checkbox" name="jurusan[]" value="S1tekniktelekomunikasi">S1 teknik telekomunikasi<br><br>
-                                <input type="checkbox" name="jurusan[]" value="S1teknikindustri" checked>S1 teknik Industri<br><br>
-                                <input type="checkbox" name="jurusan[]" value="S1ilmukomunikasi" checked>S1 ilmu komunikasi<br><br>
-                                <input type="checkbox" name="jurusan[]" value="S1Akuntansi" checked>S1 Akuntansi<br><br>
-                                <input type="checkbox" name="jurusan[]" value="S1MBTI" checked>S1 MBTI<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1 Informatika">S1 informatika<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1 Teknik Telekomunikasi">S1 teknik telekomunikasi<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1 Teknik Industri" checked>S1 teknik Industri<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1 Ilmu Komunikasi" checked>S1 ilmu komunikasi<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1 Akuntansi" checked>S1 Akuntansi<br><br>
+                                <input type="checkbox" name="jurusan[]" value="S1 MBTI" checked>S1 MBTI<br><br>
                                 <small class="form-text text-danger"><?= form_error('jurusan') ?>.</small>
                             </div>
                             <div class="form-group">

@@ -38,35 +38,35 @@ input[type=text-field], [type=date]{
                        <h1>Setting</h1>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="<?php echo base_url('UserController/edit') ?>" method="post">
                                 <div class="form-group">
-                                        <label for="text"> Nama perusahaan</label>
-                                        <input type="text" class="form-control" id="perusahaan" name="perusahaan" value="panggil nama dari database" > <!--menampilkan nama perusahaan-->
+                                        <label for="text"> Nama <?php if ($_SESSION['status']=='Mitra') {echo "Perusahaan";} ?></label>
+                                        <input type="text" class="form-control" id="perusahaan" name="perusahaan" value="<?= $data['nama'] ?>" > <!--menampilkan nama perusahaan-->
                                         <small class="form-text text-danger"><?= form_error('perusahaan') ?>.</small>
                                     </div>
                             <div class="form-group">
                                 <label for="text">Username</label>
-                                <input type="text" class="form-control" id="username" name="username" value="panggil username dari database" required>
+                                <input type="text" class="form-control" id="username" name="username" value="<?= $data['username'] ?>" required readonly>
                                 <small class="form-text text-danger"><?= form_error('username') ?>.</small>
                             </div>
                             <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" value="panggil email" required>
+                                    <input type="email" class="form-control" id="email" name="email" value="<?= $data['email'] ?> " required>
                                     <small class="form-text text-danger"><?= form_error('email') ?>.</small>
                             </div>
                             <div class="form-group">
-                                    <label for="tanggallahir">Tanggal Lahir</label><br>
-                                    <input type="text-field" name="Tempat" id="tempat" value="panggil tempat" required>
-                                    <input type="date" name="tanggal" id="tanggal" value="panggil yanggal" required>   
+                                    <label for="tanggallahir">Tempat dan Tanggal Lahir</label><br>
+                                    <input type="text-field" name="Tempat" id="tempat" value="<?= $data['tempat'] ?>" required>
+                                    <input type="date" name="tanggal" id="tanggal" value="<?= $data['tanggalLahir'] ?>" required>   
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label><br>
-                                <input type="password" name="password" value="panggil password" required>
+                                <label for="password">Password Lama</label><br>
+                                <input type="password" name="password" value="" required>
                                 <small class="form-text text-danger"><?= form_error('password') ?>.</small>
                             </div>
                             <div class="form-group">
-                                    <label for="password"> Konfirmasi Password</label><br>
-                                    <input type="password" name="password"  required>
+                                    <label for="password">Password Baru</label><br>
+                                    <input type="password" name="passwordbaru"  >
                                     <small class="form-text text-danger"><?= form_error('password') ?>.</small>
                                 </div>
                             

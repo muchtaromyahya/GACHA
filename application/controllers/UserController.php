@@ -11,7 +11,7 @@ class UserController extends CI_Controller {
             $email=$data['email'];
             $nama=$data['nama'];
             $tempat=$data['tempat'];
-            $tanggal=$data['tanggal'];
+            $tanggal=$data['tanggalLahir'];
             $dataSession = array (
                 'username' => $uname,
                 'status' => $status,
@@ -42,6 +42,24 @@ class UserController extends CI_Controller {
 
         
 
+    }
+    public function setting() {
+        if (isset($_SESSION['Logged_in'])) {
+            $data['data']=$this->User->getdata($_SESSION['username']);
+            $this->load->view('header1');
+            $this->load->view('akun/setting',$data);
+        } else {
+            $this->session->set_flashdata('alert','anda tidak dapat mengakses halaman sebelumnya!');
+            redirect('Home');
+        }
+        
+    }
+    public function edit() {
+    $this->User->edit($_SESSION['username']);   
+    redirect('Home');
+
+         
+        
     }
 }
 ?>
